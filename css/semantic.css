@@ -26,6 +26,10 @@ h1, h2, h3 {
     letter-spacing: 0.01em;
 }
 
+h1+section {
+    background: moccasin;
+}
+
 .logo {
     background-color: rebeccapurple;
     color: lightgreen;
@@ -33,15 +37,28 @@ h1, h2, h3 {
     margin-right: 50px;
     text-decoration: none;
 }
+
+.link {
+    display: block;
+    background: rebeccapurple;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+}
+
 ul {
     display: flex;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
+    gap: 30px;
 }
-ul > li {
+
+/*ul > li:not(:last-child) {
     margin-right: 30px;
-}
+} 
+*/
+
 .box {
     display: flex;
     margin-bottom: 30px;
@@ -62,7 +79,12 @@ section {
 .post {
     padding-bottom: 20px;
 }
-footer {
+.footer {
     font-size: 13px;
     padding: 0 20px 0 20px;
+}
+
+.results {
+    display: flex;
+    gap: 10px;
 }
