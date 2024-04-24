@@ -2,7 +2,7 @@
     font-size: 20px;
     display: flex;
     border-bottom: 1px solid #dcdcdc;
-    padding: 10px 20px 0 20px;
+    padding: 10px 20px;
 }
 
 .logo {
@@ -17,6 +17,7 @@ a {
 
 
 body {
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -26,7 +27,7 @@ h1, h2, h3 {
     letter-spacing: 0.01em;
 }
 
-h1+section {
+.first_section {
     background: moccasin;
 }
 
@@ -54,10 +55,9 @@ ul {
     gap: 30px;
 }
 
-/*ul > li:not(:last-child) {
-    margin-right: 30px;
+ul > li:not(:last-child) {
+    margin-right: 0;
 } 
-*/
 
 .box {
     display: flex;
